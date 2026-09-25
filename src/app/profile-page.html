@@ -21,7 +21,7 @@
     <section class="hero" id="profile" aria-labelledby="profile-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> {{ location }}</p>
-        <h1 id="profile-title">{{ displayName }}</h1>
+        <h1 id="profile-title"><span class="profile-name-first">{{ firstName }}</span>&ngsp;<span class="profile-name-last">{{ lastName }}</span></h1>
         <p class="hero-summary">{{ role }} at {{ employer }}, building enterprise applications with Java, Spring Boot, microservices, and Azure.</p>
         <div class="hero-actions">
           <a class="button button-primary" [href]="linkedInUrl" target="_blank" rel="noopener noreferrer">
@@ -49,9 +49,9 @@
     <section class="information-section" id="about" aria-labelledby="about-title">
       <div class="section-index">ABOUT</div>
       <div class="section-content">
-        <details class="about-summary-disclosure" open>
+        <details class="about-summary-disclosure">
           <summary>
-            <h2 id="about-title">Builder Engineer Learner Innovator</h2>
+            <h2 id="about-title"><span class="about-title-builder">Builder</span>&ngsp;<span class="about-title-engineer">Engineer</span>&ngsp;<span class="about-title-learner">Learner</span>&ngsp;<span class="about-title-innovator">Innovator</span></h2>
             <span class="disclosure-icon" aria-hidden="true"></span>
           </summary>
           <div class="about-summary-body">

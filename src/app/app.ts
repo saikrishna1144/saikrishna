@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './profile-page.scss',
 })
 export class App {
-  readonly displayName = 'Saikrishna Mungandi';
+  readonly firstName = 'Saikrishna';
+  readonly lastName = 'Mungandi';
+  readonly displayName = `${this.firstName} ${this.lastName}`;
   readonly linkedInUrl = 'https://www.linkedin.com/in/saikrishna-mungandi-25b1a8203';
   readonly instagramUrl = 'https://www.instagram.com/saikrishna_mungandi';
   readonly role = 'Digital Specialist Engineer L2';
   readonly employer = 'Infosys';
-  readonly location = 'Hyderabad, Telangana, India';
+  readonly location = 'West Godavari, Andhra Pradesh, India';
   readonly skills = ['Java', 'Spring Boot', 'Microservices', 'Azure', 'AngularJS'];
   readonly experience = [
     {
