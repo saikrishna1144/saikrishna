@@ -1,0 +1,29 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	background: #f7f8f8;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background: #f7f8f8;
+	color: #202930;
+	font-family: 'Aptos', 'Segoe UI', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: #d6e5df;
+	color: #202930;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
